@@ -6,9 +6,9 @@ $(".drum").click(function() {
 });
 
 // Detecting keyboard press//
-$("body").keypress(function() {
-  makeSound(event.key);
-  buttonAnimation(event.key);
+$("body").keypress(function(e) {
+  makeSound(e.key);
+  buttonAnimation(e.key);
 });
 
 
